@@ -34,7 +34,7 @@ function Navbar() {
           </>
         ) : (
           <>
-            <Link to="/" className="px-3 py-2 text-white hover:text-pink-600"></Link>
+            
           </>
         )}
       </div>

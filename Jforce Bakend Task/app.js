@@ -68,6 +68,12 @@ app.get("/expenses/:userId", async (req, res) => {
     }
 });
 
+app.delete("/expenses/:id", async(req,res)=>{
+    console.log("hello akshata")
+    const expense = await Expense.findByIdAndDelete(req.params.id);
+    if (!Expense) return res.status(404).send('Expense not found');
+    res.send('Expense deleted');
+})
 
 app.post("/expenses", async (req, res) => {
     console.log("hello2");
