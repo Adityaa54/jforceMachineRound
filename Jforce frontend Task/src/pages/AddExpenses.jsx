@@ -48,7 +48,7 @@ function AddExpenses() {
       ) : (
         <>
           <Navbar />
-          <div className="flex font-mono justify-center items-center h-screen bg-gray-200">
+          <div className=" relative flex font-mono justify-center items-center h-screen bg-gray-200">
             <div className="w-80 p-6 bg-white rounded shadow">
               <h2 className="text-xl text-center mb-4">Add Expense</h2>
               <form onSubmit={handleSubmit}>
@@ -93,6 +93,8 @@ function AddExpenses() {
                 </button>
               </form>
             </div>
+            
+            
           </div>
         </>
       )}

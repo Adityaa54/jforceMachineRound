@@ -26,15 +26,11 @@ function Navbar() {
       </div>
 
       <div className="flex flex-wrap space-x-4 text-xs sm:text-base md:text-lg">
-        {login ? (
+        {login&&(
           <>
             <Link to="/" className="px-1 py-2 text-white hover:text-pink-600">Home</Link>
-            <Link to="/addexpense" className="px-1 py-2 text-white hover:text-pink-600">Add Expenses</Link>
+            {/* <Link to="/addexpense" className="px-1 py-2 text-white hover:text-pink-600">Add Expenses</Link> */}
             <Link to="/show" className="px-1 py-2 text-white hover:text-pink-600">All Expenses</Link>
-          </>
-        ) : (
-          <>
-            
           </>
         )}
       </div>

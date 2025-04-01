@@ -107,6 +107,7 @@ app.put('/expenses/:id',async(req,res)=>{
         res.status(500).json({msg:"some error are there"});
     }
 })
+
 app.get("/user", (req, res) => {
     console.log("hellooo");
     res.status(200).json("Hello from /user route" );

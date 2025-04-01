@@ -6,11 +6,11 @@ import Update from './pages/Update'
 import Home from './pages/Home'
 import { Routes, Route } from 'react-router-dom';
 import AddExpenses from './pages/AddExpenses'
+import Footer from './component/Footer'
 function App() {
 
   return (
     <div>
-      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -19,6 +19,7 @@ function App() {
         <Route path="/update/:id/:exp/:amoun/:des" element={<Update />} />
         <Route path="/addexpense" element={<AddExpenses />} />
       </Routes>
+      <Footer/>
     </div>
   )
 }
